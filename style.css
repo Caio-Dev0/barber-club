@@ -21,3 +21,14 @@
     --space-24: 2.4rem;
     --space-74: 7.4rem;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+}
