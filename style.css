@@ -55,5 +55,19 @@ html{
     word-wrap: break-word;
 }
 
+.header__nav{
+position: absolute;
+left: 0;
+top: 10dvh;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-16);
+  gap: var(--space-16);
+  width: 100%;
+  background-color: #2C2C2C;
+  transform: translateY(-150%);
+  transition: transform 0.3s ease-in-out;
+
+}
 
 
