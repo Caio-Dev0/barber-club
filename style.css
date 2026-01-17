@@ -70,4 +70,34 @@ top: 10dvh;
 
 }
 
+.header__nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-24);
+    & a{
+        text-decoration: none;
+        color: var(--primary-color);
+        font-family: var(--poppins-typo);
+        font-size: var(--font-20);
+        text-transform: uppercase;
+        padding: var(--spacee-8);
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            color: var(--dark-wine);
+        }
+        &:focus, &:hover{
+            background-color: var(--primary-color);
+        }
+
+    }
+}
+
+
+
+
+
+
+
 
