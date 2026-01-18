@@ -99,7 +99,7 @@ top: 10dvh;
 }
 
 .header__menu-btn{
-    width: 2.5rem;
+    width: 3rem;
     height: 4rem;
     background-color: inherit;
     border: none;
@@ -108,6 +108,9 @@ top: 10dvh;
     justify-content: center;
     gap: 0.8rem;
     cursor: pointer;
+    & span{
+        transition: 0.3s ease-in-out;
+    }
 
     & span:nth-child(1){
         width: 100%;
@@ -126,6 +129,20 @@ top: 10dvh;
         height: 0.4rem;
         background-color: var(--primary-color);
         border-radius: var(--spacee-8);
+    }
+}
+
+.header__menu-btn.active-menu-btn{
+    & span:nth-child(1){
+        translate: 0 0.8rem; 
+        rotate: 225deg;
+    }
+    & span:nth-child(2){
+        opacity: 0; /* A linha do meio some */
+    }
+    & span:nth-child(3){
+       translate: 0 -1.6rem; 
+        rotate: -225deg;
     }
 }
 
