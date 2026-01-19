@@ -254,6 +254,70 @@ top: 10dvh;
     text-align: justify;
 }
 
+.services{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-24);
+    width: 100%;
+    height: auto;
+    padding: var(--space-74) clamp(var(--space-24), 4vw, var(--space-74));
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: left;
+}
+
+.services__card{
+    position: relative;
+    display: grid;
+    gap: var(--space-16);
+    padding: var(--space-24);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.services__card h4{
+    width: min-content;
+    font-family: var(--lobster-typo);
+    font-size: clamp(var(--font-20), 8vw, var(--font-32));
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.services__card p{
+    font-family: var(--poppins-typo);
+    font-size: clamp(var(--font-12), 8vw, var(--font-20));
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.services__card p:nth-child(2):before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2.9rem;
+    rotate: -60deg;
+    width: 6rem;
+    height: 2rem;
+    background-color: var(--dark-orange);
+}
+
+.services__card:nth-child(2):hover{
+    background-color: var(--light-orange);
+}
+
+.services__card:nth-child(3):hover{
+    background-color: var(--dark-orange);
+    color: var(--primary-color);
+}
+
+.services__card:nth-child(4):hover{
+    background-color: var(--dark-wine);
+    color: var(--primary-color);
+}
+
+
 /* Parar que o site não crie scroll horizontal */
 img{
     width: 100%;
