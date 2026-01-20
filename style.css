@@ -16,7 +16,7 @@
     --font-32: 3.2rem;
     --font-54: 5.4rem;
     --font-156: 15.6rem;
-    --spacee-8: 0.8rem;
+    --space-8: 0.8rem;
     --space-16: 1.6rem;
     --space-24: 2.4rem;
     --space-74: 7.4rem;
@@ -86,7 +86,7 @@ top: 10dvh;
         font-family: var(--poppins-typo);
         font-size: var(--font-20);
         text-transform: uppercase;
-        padding: var(--spacee-8);
+        padding: var(--space-8);
         transition: all 0.3s ease-in-out;
         &:hover{
             color: var(--dark-wine);
@@ -120,19 +120,19 @@ top: 10dvh;
         width: 100%;
         height: 0.4rem;
         background-color: var(--primary-color);
-        border-radius: var(--spacee-8);
+        border-radius: var(--space-8);
     }
     & span:nth-child(2){
         width: 100%;
         height: 0.4rem;
         background-color: var(--primary-color);
-        border-radius: var(--spacee-8);
+        border-radius: var(--space-8);
     }
     & span:nth-child(3){
         width: 100%;
         height: 0.4rem;
         background-color: var(--primary-color);
-        border-radius: var(--spacee-8);
+        border-radius: var(--space-8);
     }
 }
 
@@ -175,7 +175,7 @@ top: 10dvh;
 .hero__titles h3{
     display: flex;
     flex-direction: column;
-    gap: var(--spacee-8);
+    gap: var(--space-8);
     max-width: 72rem;
     font-family: var(--poppins-typo);
     font-size: clamp(var(--font-24), 8vw, var(--font-32));
@@ -188,7 +188,7 @@ top: 10dvh;
 
 .hero__button{
     max-width: max-content;
-    padding: var(--spacee-8) var(--space-24);
+    padding: var(--space-8) var(--space-24);
     background-color: var(--dark-orange);
     border: none;
     text-decoration: none;
@@ -317,11 +317,85 @@ top: 10dvh;
     color: var(--primary-color);
 }
 
+.team{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: var(--space-74) clamp(var(--space-24), 4vw, var(--space-74));
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: right;
+}
 
-/* Parar que o site não crie scroll horizontal */
-img{
+.team__intro h2{
+    color: var(--dark-orange)
+}
+
+.team__cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: var(--space-24);
+}
+
+.team__card{
+    position: relative;
     width: 100%;
 }
+
+.team__card-content{
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    padding: var(--space-8);
+    color: var(--primary-color);
+    text-align: center;
+    transform: translateY(10px);
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.team__card-content h4{
+    font-family: var(--poppins-typo);
+    font-size: clamp(var(--font-14), 8vw, var(--font-20));
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.team__card-content p{
+    font-family: var(--poppins-typo);
+    font-size: clamp(var(--font-12), 8vw, var(--font-16));
+    font-weight: 400;
+    line-height: 1.6;
+}
+.team__card-image{
+    width: 100%;
+    height: 100%;
+   transition: all 0.3s ease-in-out;
+}
+
+.team__card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.team__card:hover img{
+    filter: brightness(40%);
+    transition: all 0.3s ease-in-out;
+}
+
+.team__card:hover .team__card-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.4s ease-in-out;
+}
+
+
+
+
 
 
 
