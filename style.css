@@ -335,6 +335,7 @@ top: 10dvh;
 .team__cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-content: center;
     gap: var(--space-24);
 }
 
@@ -356,26 +357,27 @@ top: 10dvh;
     opacity: 0;
 }
 
-.team__card-content h4{
+.team__card-content, .reviews__card-content h4{
     font-family: var(--poppins-typo);
-    font-size: clamp(var(--font-14), 8vw, var(--font-20));
-    font-weight: 400;
+    font-size: clamp(var(--font-14), 8vw, var(--font-24));
+    font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: var(--space-8);
 }
 
-.team__card-content p{
+.team__card-content p, .reviews__card-content p{
     font-family: var(--poppins-typo);
-    font-size: clamp(var(--font-12), 8vw, var(--font-16));
+    font-size: clamp(var(--font-12), 5vw, var(--font-20));
     font-weight: 400;
     line-height: 1.6;
 }
-.team__card-image{
+.team__card-image, .reviews__card-image{
     width: 100%;
     height: 100%;
    transition: all 0.3s ease-in-out;
 }
 
-.team__card-image img{
+.team__card-image img, .reviews__card-image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -391,6 +393,51 @@ top: 10dvh;
   opacity: 1;
   transform: translateY(0);
   transition: all 0.4s ease-in-out;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-24);
+    width: 100%;
+    height: auto;
+    padding: var(--space-74) clamp(var(--space-24), 4vw, var(--space-74));
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: left;
+
+}
+
+.reviews__cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: var(--space-24);
+    justify-content: center;
+}
+
+.reviews__card{
+    position: relative;
+    width: 100%;
+    
+}
+
+.reviews__card-image::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 1) )
+}
+
+.reviews__card-content{
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    padding: var(--space-8);
+    color: var(--primary-color);
+    text-align: center;
+    transform: translateY(-1rem);
 }
 
 
