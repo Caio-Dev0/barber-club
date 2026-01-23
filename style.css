@@ -178,6 +178,26 @@ html{
     }
 }
 
+@media(min-width: 56.25rem){
+
+    .header__menu-btn{
+        display: none;
+    }
+
+    .header__nav{
+        position: sticky;
+        width: 100%;
+        transform: translateY(0);
+        top: 0;
+    }
+
+    .header__nav ul{
+        flex-direction: row;
+        gap: var(--space-16);
+        justify-content: center;
+    }
+}
+
 
 /* Hero */
 
