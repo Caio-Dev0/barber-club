@@ -88,18 +88,18 @@ html{
 }
 
 .header__nav{
-position: absolute;
-left: 0;
-top: 10dvh;
-  display: flex;
-  flex-direction: column;
-  padding: var(--space-16);
-  gap: var(--space-16);
-  width: 100%;
-  background-color: #2C2C2C;
-  transform: translateY(-150%);
-  transition: transform 0.3s ease-in-out;
-
+    position: absolute;
+    left: 0;
+    top: 10dvh;
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-16);
+    gap: var(--space-16);
+    width: 100%;
+    background-color: #2C2C2C;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease-in-out;
+    z-index: -1;
 }
 
 .header__nav ul{
@@ -170,13 +170,14 @@ top: 10dvh;
         rotate: 225deg;
     }
     & span:nth-child(2){
-        opacity: 0; /* A linha do meio some */
+        opacity: 0;
     }
     & span:nth-child(3){
        translate: 0 -1.6rem; 
         rotate: -225deg;
     }
 }
+
 
 /* Hero */
 
