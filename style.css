@@ -52,6 +52,15 @@ html{
     margin-bottom: var(--space-16);
 }
 
+.u-section{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-24);
+    width: 100%;
+    height: auto;
+    padding: var(--space-74) clamp(var(--space-24), 4vw, var(--space-74));
+}
+
 
 /* Header */
 
@@ -216,7 +225,6 @@ top: 10dvh;
     font-family: var(--poppins-typo);
     font-size: clamp(var(--font-20), 8vw, var(--font-32));
     text-align: center;
-    /* text-transform: uppercase; */
     transition: all 0.3s ease-in-out;
         &:hover, &:focus{
             color: var(--dark-wine);
@@ -232,14 +240,13 @@ top: 10dvh;
 /* Experience */
 
 .experience{
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-24);
-    width: 100%;
-    padding: var(--space-74) clamp(var(--space-24), 4vw, var(--space-74));
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: right;
+}
+
+.experience img{
+    display: none;
 }
 
 
@@ -258,12 +265,6 @@ top: 10dvh;
 /* Services */
 
 .services{
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-24);
-    width: 100%;
-    height: auto;
-    padding: var(--space-74) clamp(var(--space-24), 4vw, var(--space-74));
     background-color: var(--secondary-color);
     color: var(--primary-color);
     text-align: left;
@@ -403,12 +404,6 @@ top: 10dvh;
 /* Reviews */
 
 .reviews{
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-24);
-    width: 100%;
-    height: auto;
-    padding: var(--space-74) clamp(var(--space-24), 4vw, var(--space-74));
     background-color: var(--secondary-color);
     color: var(--primary-color);
     text-align: left;
@@ -450,12 +445,6 @@ top: 10dvh;
 /* Contact */
 
 .contact{
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-24);
-    width: 100%;
-    height: auto;
-    padding: var(--space-74) clamp(var(--space-24), 4vw, var(--space-74));
     background-color: var(--primary-color);
     text-align: right;
 }
@@ -545,8 +534,6 @@ top: 10dvh;
   background-size: 100% 0.2rem;
   background-position-x: left;
 }
-
-
 
 /* Rever linha 503, fazer uma classe utilitaria para todas as seções e outros componentes, colocar a imagem da seção de experiência e ajeitar o link de navegação*/
 
