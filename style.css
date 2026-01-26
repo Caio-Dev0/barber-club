@@ -166,15 +166,13 @@ html{
 
 .header__menu-btn.active-menu-btn{
     & span:nth-child(1){
-        translate: 0 0.8rem; 
-        rotate: 225deg;
+        transform: translateY(0.8rem) rotate(225deg);
     }
     & span:nth-child(2){
         opacity: 0;
     }
     & span:nth-child(3){
-       translate: 0 -1.6rem; 
-        rotate: -225deg;
+      transform: translateY(-1.6rem) rotate(-225deg);
     }
 }
 
