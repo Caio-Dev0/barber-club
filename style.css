@@ -431,13 +431,11 @@ html{
 
 .team__card:hover img{
     filter: brightness(40%);
-    transition: all 0.3s ease-in-out;
 }
 
 .team__card:hover .team__card-content {
   opacity: 1;
   transform: translateY(0);
-  transition: all 0.4s ease-in-out;
 }
 
 /* Reviews */
@@ -467,7 +465,7 @@ html{
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 1) )
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 1));
 }
 
 .reviews__card-content{
@@ -552,7 +550,7 @@ html{
      align-items: center;
 }
 
-.footer p, a{
+.footer p, .foooter a{
     font-size: clamp(var(--font-12), 8vw, var(--font-24));
     margin-left: var(--space-8);
 }
@@ -570,4 +568,3 @@ html{
   background-position-x: left;
 }
 
-/* Rever linha 503 */
