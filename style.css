@@ -550,7 +550,7 @@ html{
      align-items: center;
 }
 
-.footer p, .foooter a{
+.footer p, .footer a{
     font-size: clamp(var(--font-12), 8vw, var(--font-24));
     margin-left: var(--space-8);
 }
