@@ -272,7 +272,7 @@ html{
 }
 
 .experience__intro h2{
-    color: var(--dark-orange)
+    color: var(--dark-orange);
 }
 
 .experience__intro p{
@@ -526,7 +526,7 @@ html{
     font-weight: 400;
     text-transform: uppercase;
     margin: var(--space-16) 0;
-    color: var(--light-orange)
+    color: var(--light-orange);
 }
 
 .contact__details p, .contact__details dt, .contact__details dd{
