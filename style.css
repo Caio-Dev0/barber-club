@@ -536,7 +536,7 @@ html{
     line-height: 1.6;
 }
 
-.contact__details div{
+.contact__details .datetime-item{
     display: flex;
     justify-content: space-between;
 }
