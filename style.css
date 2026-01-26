@@ -116,7 +116,7 @@ html{
         text-transform: uppercase;
         padding: var(--space-8);
         transition: all 0.3s ease-in-out;
-        &:hover{
+        &:hover, &:focus-visible{
             color: var(--dark-wine);
         }
         &:focus, &:hover{
