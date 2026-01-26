@@ -340,7 +340,7 @@ html{
     position: absolute;
     top: 0;
     left: -2.9rem;
-    rotate: -60deg;
+    transform: rotate(-60deg);  
     width: 6rem;
     height: 2rem;
     background-color: var(--dark-orange);
