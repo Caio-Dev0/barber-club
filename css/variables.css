@@ -1,0 +1,155 @@
+/* ==========================================================================
+   BARBER CLUB — VARIABLES.CSS
+   Este arquivo concentra TODAS as variáveis do projeto.
+   Se você quiser trocar uma cor, espaçamento ou fonte no futuro,
+   mexa apenas aqui — o style.css nunca usa valores "soltos".
+   ========================================================================== */
+
+:root {
+
+  /* ------------------------------------------------------------------------
+     1. VARIÁVEIS PRIMITIVAS
+     Valores "crus", sem significado de uso. Só descrevem o valor em si.
+     Não use estas diretamente no style.css — use as semânticas abaixo.
+     ------------------------------------------------------------------------ */
+
+  /* Cores primitivas */
+  --color-white:        #FFFFFF;
+  --color-black:         #000000;
+  --color-brown-500:     #A87251; /* marrom médio (destaques, títulos de seção) */
+  --color-gold-300:      #D4AF7F; /* dourado/areia claro (botões, cards) */
+  --color-gray-200:      #D9D9D9; /* cinza claro */
+  --color-gray-800:      #1E1E1E; /* cinza muito escuro (fundo escuro principal) */
+  --color-gray-400:      #B3B3B3; /* cinza médio (texto sobre fundo escuro) */
+  --color-maroon-900:    #391918; /* marrom bem escuro (footer) */
+  --color-gray-50:       #F5F5F5; /* quase branco (fundos claros) */
+  --color-brown-900:     #372C1E; /* marrom escuro (texto sobre áreas claras) */
+  --color-gray-500:      #7E7E7E; /* cinza neutro (texto secundário) */
+  --color-orange-400:    #F5A623; /* dourado/laranja (estrelas de avaliação) */
+  --color-black-900:     #0E1213; /* preto azulado (fundo do header/hero) */
+  --color-gray-850:      #2C2C2C; /* cinza escuro (cards escuros) */
+
+  /* Espaçamentos primitivos (escala em px) */
+  --space-8:    8px;
+  --space-10:   10px;
+  --space-12:   12px;
+  --space-16:   16px;
+  --space-20:   20px;
+  --space-32:   32px;
+  --space-36:   36px;
+  --space-48:   48px;
+  --space-56:   56px;
+  --space-64:   64px;
+  --space-72:   72px;
+  --space-96:   96px;
+  --space-110:  110px;
+
+  /* Tipografia primitiva */
+  --font-family-geist:    'Geist', sans-serif;
+  --font-family-poppins:  'Poppins', sans-serif;
+
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-19: 19px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-40: 40px;
+  --font-size-56: 56px;
+
+  --font-weight-extralight: 200;
+  --font-weight-light:      300;
+  --font-weight-regular:    400;
+  --font-weight-bold:       700;
+  --font-weight-extrabold:  800;
+
+  /* Outros primitivos */
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  16px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================================================
+   2. VARIÁVEIS SEMÂNTICAS
+   Descrevem ONDE / PARA QUE cada valor primitivo é usado.
+   O style.css só deve consumir variáveis daqui pra baixo.
+   ============================================================================ */
+:root {
+
+  /* --- Cores de fundo (backgrounds) --- */
+  --bg-primary:            var(--color-white);      /* fundo padrão das seções claras */
+  --bg-secondary:          var(--color-gray-50);     /* fundo alternativo levemente acinzentado */
+  --bg-dark:               var(--color-black-900);   /* fundo do header e do hero */
+  --bg-dark-alt:           var(--color-gray-800);    /* fundo escuro alternativo */
+  --bg-footer:             var(--color-maroon-900);  /* fundo do rodapé */
+  --bg-card-dark:          var(--color-gray-850);    /* fundo dos cards do time / reviews */
+  --bg-card-accent:        var(--color-gold-300);    /* fundo dos cards de serviços */
+  --bg-badge-dark:         var(--color-brown-900);   /* fundo dos badges de preço */
+  --bg-input:              var(--color-white);       /* fundo dos campos de formulário */
+
+  /* --- Cores de texto --- */
+  --text-on-light:         var(--color-black);       /* texto principal sobre fundo claro */
+  --text-on-light-muted:   var(--color-gray-500);    /* texto secundário sobre fundo claro */
+  --text-on-dark:          var(--color-white);       /* texto principal sobre fundo escuro */
+  --text-on-dark-muted:    var(--color-gray-400);    /* texto secundário sobre fundo escuro */
+  --text-brand:            var(--color-brown-500);   /* cor de destaque (títulos "EXPERIÊNCIA" etc) */
+  --text-accent-gold:      var(--color-gold-300);    /* links / detalhes dourados */
+  --text-star:             var(--color-orange-400);  /* estrelas de avaliação */
+
+  /* --- Cores de borda / divisores --- */
+  --border-light:          var(--color-gray-200);
+  --border-dark:           rgba(255, 255, 255, 0.12);
+  --border-input:          var(--color-gray-200);
+
+  /* --- Botões --- */
+  --btn-primary-bg:        var(--color-gold-300);
+  --btn-primary-bg-hover:  var(--color-brown-500);
+  --btn-primary-text:      var(--color-black);
+  --btn-primary-text-hover: var(--color-white);
+
+  --btn-secondary-bg:      var(--color-brown-500);
+  --btn-secondary-bg-hover: var(--color-gold-300);
+  --btn-secondary-text:    var(--color-white);
+
+  /* --- Tipografia semântica --- */
+  --font-display:          var(--font-family-poppins); /* títulos, marca */
+  --font-body:             var(--font-family-geist);   /* corpo de texto */
+
+  --font-size-hero-title:      var(--font-size-56);
+  --font-size-section-title:   var(--font-size-40);
+  --font-size-card-title:      var(--font-size-24);
+  --font-size-lead:            var(--font-size-19);
+  --font-size-subtitle:        var(--font-size-20);
+  --font-size-body:            var(--font-size-16);
+  --font-size-small:           var(--font-size-14);
+  --font-size-caption:         var(--font-size-12);
+
+  --weight-heading:        var(--font-weight-extrabold);
+  --weight-subheading:     var(--font-weight-bold);
+  --weight-body:           var(--font-weight-regular);
+  --weight-body-light:     var(--font-weight-light);
+  --weight-detail:         var(--font-weight-extralight);
+
+  /* --- Espaçamento semântico --- */
+  --space-section-y:       var(--space-110); /* respiro vertical entre seções grandes */
+  --space-section-y-sm:    var(--space-96);
+  --space-block-gap:       var(--space-64);  /* espaço entre blocos dentro de uma seção */
+  --space-card-gap:        var(--space-32);  /* gap entre cards em grid */
+  --space-card-padding:    var(--space-36);  /* padding interno dos cards */
+  --space-stack:           var(--space-16);  /* espaço entre elementos empilhados (título/texto) */
+  --space-inline:          var(--space-12);  /* espaço entre elementos lado a lado (ícone/texto) */
+  --space-container-x:     var(--space-48);  /* padding lateral do container */
+  --space-container-x-sm:  var(--space-20);
+  --space-tight:           var(--space-8);
+
+  /* --- Layout --- */
+  --container-max-width:   1240px;
+  --header-height:         88px;
+
+  /* --- Transições --- */
+  --transition-fast:       0.2s ease;
+  --transition-medium:     0.35s ease;
+}

@@ -1,221 +1,381 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Barber Club | Landing Page Front-End</title>
-    <meta name="title" content="Projeto Barber Club | Landing Page Front-End" />
-    <meta name="description" content="Conheça o Barber Club, uma landing page desenvolvida para o nicho de barbearias. Interface moderna, UI/UX intuitivo e performance otimizada. Desenvolvido por Caio Lucas." />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============ SEO ============ -->
+  <title>Barber Club | Barbearia em Sobral — Cortes, Barba e Ritual Completo</title>
+  <meta name="description" content="Barber Club: onde precisão vira estilo. Cortes, barba e rituais completos com mestres barbeiros. 8 anos de experiência, +3000 clientes e nota 4.9 no Google. Agende seu horário agora.">
+  <meta name="keywords" content="barbearia, barber club, corte de cabelo, barba, barbeiro, agendamento barbearia">
+  <meta name="author" content="Barber Club">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Barber Club | Comunique sua força sem precisar dizer uma só palavra">
+  <meta property="og:description" content="Cortes, barba e rituais completos com mestres barbeiros. Agende seu horário e sinta a diferença da precisão.">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@200;300;400;700;800&family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header">
-    <div class="header__title">
-        <h1>Barber Club</h1>
-    </div>
-    <button class="header__menu-btn" aria-label="Abrir menu" aria-expanded="false">
-        <span class="menu-btn__bar"></span>
-        <span class="menu-btn__bar"></span>
-        <span class="menu-btn__bar"></span>
-    </button>
-    <nav class="header__nav">
-        <ul>
-            <li>
-                <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="#experience">Experiência</a>
-            </li>
-             <li>
-                <a href="#services">Serviços</a>
-            </li>
-             <li>
-                <a href="#team">Equipe</a>
-            </li>
-             <li>
-                <a href="#reviews">Reviews</a>
-            </li>
-             <li>
-                <a href="#contact">Contato</a>
-            </li>
+
+  <!-- ======================= HEADER / NAV ======================= -->
+  <header class="site-header" id="topo">
+    <div class="container header__container">
+
+      <a href="#topo" class="logo" aria-label="Barber Club — voltar ao topo">
+        <span class="logo__badge" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M13 12v16M27 12v16M13 12h14M13 28h14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list" id="navList">
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#time">Time</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contatos">Contatos</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
 
-<main class="site-main">
-    <section class="site-main__hero u-section" id="home">
-        <div class="hero__titles">
-            <h2>barber club</h2>
-            <h3>
-                <span>um refúgio para o homem moderno.</span> 
-                <span>Cuidado de alto padrão com a leveza de um bom bate-papo.</span>
-            </h3>
-        </div>
-
-        <a href="#contact"  class="hero__button">Entre em contato</a>
-    </section>
-
-    <section class="experience u-section" id="experience">
-        <div class="experience__images">
-            <img src="/assets/images/corte2.jpg" alt="Mãos de um barbeiro cortando a lateral da barba do cliente com uma tesoura">
-            <img src="/assets/images/corte3.jpg" alt="Mãos de um barbeiro passando uma escova no cabelo de um cliente">
-        </div>
-        <div class="experience__intro u-titles">
-            <h2>experiência</h2>
-            <h3>A escolha de quem não tem tempo para erros.</h3>
-            <p>Centenas de clientes já passaram por nossas cadeiras e saíram com a autoestima renovada. Nossa bagagem no mercado nos deu o que o Google não ensina: a precisão do olhar. Sabemos exatamente o que funciona para o seu rosto e para o seu estilo. Sem surpresas desagradáveis. Apenas a consistência de quem faz o que ama há anos. Venha descobrir por que somos a referência número um da região.</p>
-        </div>
-    </section>
-
-    <section class="services u-section" id="services">
-        <div class="services__intro u-titles">
-            <h2>serviços</h2>
-            <h3>Escolha o nível de impacto que você quer causar hoje.</h3>
-        </div>
-        <article class="services__card">
-            <h4>Essencial Urbano</h4>
-            <p>Preço: <data value="70">70</data></p>
-            <p>O ajuste perfeito para quem tem a agenda cheia.</p>
-            <p>Corte de cabelo (máquina ou tesoura) + Barba express + Acabamento com navalha descartável.</p>
-        </article>
-        <article class="services__card">
-            <h4>Combo Lord</h4>
-            <p>Preço: <data value="90">90</data></p>
-            <p>A solução definitiva para quem não abre mão da excelência.</p>
-            <p>Corte Premium + Barboterapia com toalha quente + Alinhamento de sobrancelha.</p>
-        </article>
-        <article class="services__card">
-            <h4>Experiência VIP</h4>
-            <p>Preço: <data value="120">120</data></p>
-            <p>Para o homem que entende que imagem é poder.</p>
-            <p>Corte personalizado + Barba completa + Lavagem com produtos importados + Finalização com pomada premium.</p>
-        </article>
-    </section>
-    <section class="team" id="team">
-        <div class="team__intro u-titles"> 
-            <h2>nosso time</h2>
-            <h3>seu estilo não aceita amadores. Conheça nossos mestres.</h3>
-        </div>
-        <div class="team__cards">
-            <article class="team__card">
-                <div class="team__card-image">
-                    <img src="/assets/images/barbeiro1.jpg" alt="barbeiro alex olhando diretamente para a foto, onde ele coloca uma toalha no rosto do cliente">
-                </div>
-                <div class="team__card-content">
-                    <h4>Alex</h4>
-                    <p>Especialista em clássicos e barboterapia. 10 anos transformando rostos com precisão cirúrgica.</p>
-                </div>
-            </article>
-            <article class="team__card">
-                <div class="team__card-image">
-                    <img src="/assets/images/barbeiro2.jpg" alt="barbeiro logan fazendo um corte em um cliente">
-                </div>
-                <div class="team__card-content">
-                    <h4>Logan</h4>
-                    <p>Mestre dos degradês e tendências modernas. Criatividade que destaca sua personalidade.</p>
-                </div>
-            </article>
-            <article class="team__card">
-                <div class="team__card-image">
-                    <img src="/assets/images/barbeiro3.jpg" alt="barbeiro miguel penteando o cabelo de um cliente">
-                </div>
-                <div class="team__card-content">
-                    <h4>Miguel</h4>
-                    <p>Referência em visagismo facial. O expert em alinhar seu corte ao seu formato de rosto.</p>
-                </div>
-            </article>
-        </div>
-    </section>
-    <section class="reviews u-section" id="reviews">
-        <div class="reviews__intro u-titles">
-            <h2>reviews</h2>
-            <h3>quem experimenta, vira fã. Quem vira fã, não troca por nada.</h3>
-        </div>
-        <div class="reviews__cards">
-            <article class="reviews__card">
-                <div class="reviews__card-image">
-                    <img src="/assets/images/depoimento1.jpg" alt="Cliente Fernando, sentado e de óculos escuros, olhando para o horizonte">
-                </div>
-                <div class="reviews__card-content">
-                    <h4>Fernando K.</h4>
-                    <p><q>Finalmente encontrei uma barbearia que acerta o meu corte de primeira. O ambiente é sensacional e o atendimento é impecável.</q></p>
-                </div>
-            </article>
-            <article class="reviews__card">
-                <div class="reviews__card-image">
-                    <img src="/assets/images/depoimento2.jpg" alt="Cliente Logan olhando diretamente para a foto e mostrando seus aneis em sua mão direita">
-                </div>
-                <div class="reviews__card-content">
-                    <h4>Logan H.</h4>
-                    <p><q>Frequento há 2 anos e não mudo. É o meu momento de relaxar e sair pronto para a semana. Recomendo de olhos fechados!</q></p>
-                </div>
-            </article>
-            <article class="reviews__card">
-                <div class="reviews__card-image">
-                    <img src="/assets/images/depoimento3.jpg" alt="Cliente matias olhando, sentado, olhando para o horizonte">
-                </div>
-                <div class="reviews__card-content">
-                    <h4>Matias P.</h4>
-                    <p><q>O atendimento é tão bom que o corte parece um bônus. Saio renovado toda vez que sento naquela cadeira.</q></p>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <section class="contact u-section" id="contact">
-        <div class="contact__intro u-titles">
-            <h2>contatos</h2>
-            <h3>você chegou até aqui porque sabe que merece um cuidado superior. Não saia desta página com o mesmo visual de sempre. Nossa cadeira está pronta para te receber e renovar sua confiança.</h3>
-        </div>
-        <article class="contact__details">
-            <address>
-                <h4>Localização</h4>
-                <p>Rua seu josé</p>
-
-                <h4>Horários</h4>
-                <div class="datetime-item">
-                    <dt>Segunda</dt>
-                    <dd><time datetime="09:00">09:00</time> - <time datetime="19:00">19:00</time></dd>
-                </div>
-                <div class="datetime-item">
-                    <dt>Terça</dt>
-                    <dd><time datetime="09:00">09:00</time> - <time datetime="19:00">19:00</time></dd>
-                </div>
-                <div class="datetime-item">
-                    <dt>Quarta</dt>
-                    <dd><time datetime="09:00">09:00</time> - <time datetime="19:00">19:00</time></dd>
-                </div>
-                <div class="datetime-item">
-                    <dt>Quinta</dt>
-                    <dd><time datetime="09:00">09:00</time> - <time datetime="19:00">19:00</time></dd>
-                </div>
-                <div class="datetime-item">
-                    <dt>Sexta</dt>
-                    <dd><time datetime="09:00">09:00</time> - <time datetime="19:00">19:00</time></dd>
-                </div>
-                <div class="datetime-item">
-                    <dt>Sábado</dt>
-                    <dd><time datetime="09:00">09:00</time> - <time datetime="19:00">19:00</time></dd>
-                </div>
-            </address>
-            <div class="contact__image-container">
-                 <img src="/assets/images/barbearia.jpg" alt="Janela da Barbearia Barber Club, com uma bike do lado de um banco que esta pŕoxima a ela">
-            </div>
-        </article>  
-    </section>
-</main>
-
-<footer class="footer u-section">
-    <p> &copy; Desenvolvido por<a href="https://www.linkedin.com/in/caio-dev0/">Caio Lucas</a></p>
-    <div class="footer__social">
-        <a href="https://www.linkedin.com/in/caio-dev0/" target="_blank">Linkedin</a>
-        <a href="https://github.com/Caio-Dev0" target="_blank">Github</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-</footer>
 
-    
+    <!-- Menu que desliza abaixo da nav em telas estreitas -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-menu__list">
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#time">Time</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+      </ul>
+    </div>
+  </header>
 
+  <main>
 
-<script src="/script.js"></script>
+    <!-- ======================= HERO ======================= -->
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">Comunique sua força sem precisar dizer uma só palavra.</h1>
+          <p class="hero__text">Esqueça os cortes genéricos. Nossos mestres traduzem sua personalidade em um acabamento impecável e de alto padrão.</p>
+          <a href="#contatos" class="btn btn--primary">Marcar meu horário agora</a>
+        </div>
+
+        <img src="images/logo.png" alt="" style="transform: scale(1);">
+      </div>
+    </section>
+
+    <!-- ======================= EXPERIÊNCIA ======================= -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <div class="experience__grid">
+
+          <div class="experience__text">
+            <p class="eyebrow">EXPERIÊNCIA</p>
+            <p class="section-lead">Centenas de clientes já passaram por nossas cadeiras e saíram com a autoestima renovada. Nossa bagagem no mercado nos deu o que o Google não ensina: a precisão do olhar.</p>
+
+            <dl class="stats">
+              <div class="stats__item">
+                <dt>8 anos</dt>
+                <dd>de precisão</dd>
+              </div>
+              <div class="stats__item">
+                <dt>3000+</dt>
+                <dd>clientes atendidos</dd>
+              </div>
+              <div class="stats__item">
+                <dt>4.9</dt>
+                <dd>no Google</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="experience__images">
+            <!-- IMAGEM 1: foto de perto de um barbeiro aparando o cabelo de um cliente com pente e máquina -->
+            <img class="experience__img" src="images/experiencia-corte.jpg" alt="Barbeiro aparando o cabelo de um cliente">
+            <!-- IMAGEM 2: foto de um cliente sentado na cadeira recebendo barba/toalha quente, ambiente escuro da barbearia -->
+            <img class="experience__img" src="images/experiencia-barba.jpg" alt="Cliente recebendo atendimento de barba na cadeira da barbearia">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SERVIÇOS ======================= -->
+    <section class="section section--alt" id="servicos">
+      <div class="container">
+        <p class="eyebrow">SERVIÇOS</p>
+        <p class="section-lead">Cada pacote foi montado para um ritmo de vida diferente. Do corte rápido ao ritual completo.</p>
+
+        <ul class="services">
+          <li class="service-card">
+            <span class="service-card__tag">Essencial Urbano</span>
+            <ul class="service-card__list">
+              <li>Corte</li>
+              <li>Barba express</li>
+              <li>Acabamento com navalha</li>
+            </ul>
+            <span class="service-card__price">R$ 70</span>
+            <p class="service-card__caption">O ajuste perfeito para quem tem a agenda cheia</p>
+          </li>
+
+          <li class="service-card">
+            <span class="service-card__tag">Combo Lord</span>
+            <ul class="service-card__list">
+              <li>Corte</li>
+              <li>Barba completa</li>
+              <li>Hidratação capilar</li>
+            </ul>
+            <span class="service-card__price">R$ 90</span>
+            <p class="service-card__caption">Do cabelo à barba, sem nenhum detalhe escapar</p>
+          </li>
+
+          <li class="service-card">
+            <span class="service-card__tag">Ritual Black</span>
+            <ul class="service-card__list">
+              <li>Corte</li>
+              <li>Barba com vapor</li>
+              <li>Hidratação premium</li>
+              <li>Massagem capilar</li>
+            </ul>
+            <span class="service-card__price">R$ 130</span>
+            <p class="service-card__caption">A experiência completa para quem não aceita menos</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================= NOSSO TIME ======================= -->
+    <section class="section" id="time">
+      <div class="container">
+        <p class="eyebrow">NOSSO TIME</p>
+        <p class="section-lead">Conheça um pouco mais do pessoal que faz essa barbearia se tornar especial.</p>
+
+        <ul class="team">
+          <li class="team-card">
+            <!-- IMAGEM: foto do barbeiro Baptiste Moreau trabalhando, óculos, camiseta preta, ambiente claro -->
+            <img class="team-card__img" src="images/time-baptiste.jpg" alt="Baptiste Moreau, barbeiro do Barber Club">
+            <div class="team-card__body">
+              <h3 class="team-card__name">Baptiste Moreau</h3>
+              <p class="team-card__bio">Cada corte é uma decisão. Eu não sigo tendência, eu leio o rosto de quem está na minha cadeira e entrego o que faz sentido pra ele.</p>
+              <div class="team-card__socials">
+                <a href="#" aria-label="Instagram de Baptiste Moreau">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+                </a>
+                <a href="#" aria-label="X de Baptiste Moreau">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="1.8"/></svg>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="team-card">
+            <!-- IMAGEM: foto de James Calloway barbeando/cortando cabelo de cliente, luvas pretas -->
+            <img class="team-card__img" src="images/time-james.jpg" alt="James Calloway, barbeiro do Barber Club">
+            <div class="team-card__body">
+              <h3 class="team-card__name">James Calloway</h3>
+              <p class="team-card__bio">Levo precisão a sério. Não existe 'quase certo' quando o cliente vai sair daqui e enfrentar o mundo.</p>
+              <div class="team-card__socials">
+                <a href="#" aria-label="Instagram de James Calloway">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+                </a>
+                <a href="#" aria-label="X de James Calloway">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="1.8"/></svg>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="team-card">
+            <!-- IMAGEM: foto de Diego Salinas com chapéu, atendendo cliente, ambiente de tijolinho -->
+            <img class="team-card__img" src="images/time-diego.jpg" alt="Diego Salinas, barbeiro do Barber Club">
+            <div class="team-card__body">
+              <h3 class="team-card__name">Diego Salinas</h3>
+              <p class="team-card__bio">Aprendi que barba e cabelo contam a história de um homem. Meu trabalho é fazer essa história parecer intencional.</p>
+              <div class="team-card__socials">
+                <a href="#" aria-label="Instagram de Diego Salinas">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+                </a>
+                <a href="#" aria-label="X de Diego Salinas">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="1.8"/></svg>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================= REVIEWS ======================= -->
+    <section class="section section--alt" id="reviews">
+      <div class="container">
+        <p class="eyebrow">REVIEWS</p>
+        <p class="section-lead">Ainda tá com dúvidas de que precisa vir aqui? Olha o que nossos clientes falam.</p>
+
+        <ul class="reviews">
+          <li class="review-card">
+            <div class="review-card__stars" aria-label="4 de 5 estrelas">★★★★☆</div>
+            <p class="review-card__text">Finalmente encontrei uma barbearia que acerta o meu corte de primeira. O ambiente é sensacional e o atendimento é impecável.</p>
+            <div class="review-card__author">
+              <!-- IMAGEM: avatar/foto do cliente Fernando K. -->
+              <img src="images/review-fernando.jpg" alt="Fernando K.">
+              <span>Fernando K.</span>
+            </div>
+          </li>
+
+          <li class="review-card">
+            <div class="review-card__stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <p class="review-card__text">Frequento há 2 anos e não mudo. É o meu momento de relaxar e sair pronto para a semana. Recomendo de olhos fechados!</p>
+            <div class="review-card__author">
+              <!-- IMAGEM: avatar/foto do cliente Logan H. -->
+              <img src="images/review-logan.jpg" alt="Logan H.">
+              <span>Logan H.</span>
+            </div>
+          </li>
+
+          <li class="review-card">
+            <div class="review-card__stars" aria-label="4 de 5 estrelas">★★★★☆</div>
+            <p class="review-card__text">O atendimento é tão bom que o corte parece um bônus. Saio renovado toda vez que sento naquela cadeira.</p>
+            <div class="review-card__author">
+              <!-- IMAGEM: avatar/foto do cliente Matias P. -->
+              <img src="images/review-matias.jpg" alt="Matias P.">
+              <span>Matias P.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================= CONTATOS ======================= -->
+    <section class="section" id="contatos">
+      <div class="container">
+        <div class="contact__grid">
+
+          <div class="contact__info">
+            <p class="eyebrow">CONTATOS</p>
+            <p class="section-lead">Se olhou até o final é porque precisa marcar um corte com a gente</p>
+
+            <ul class="contact__list">
+              <li>
+                <span class="contact__icon" aria-hidden="true">✉</span>
+                <div>
+                  <strong>Email</strong>
+                  <p>nos contate pelo email</p>
+                  <a href="mailto:EmailBemMassa@gmail.com">EmailBemMassa@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact__icon" aria-hidden="true">☎</span>
+                <div>
+                  <strong>Telefone</strong>
+                  <p>nos contate pelo celular</p>
+                  <a href="tel:+5791999230815">+57 (91) 99923-0815</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact__icon" aria-hidden="true">⚑</span>
+                <div>
+                  <strong>Localização</strong>
+                  <p>nos encontre na nossa rua</p>
+                  <a href="#">Rua Dom Walfrido Nogueira</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact__form" id="bookingForm" novalidate>
+            <div class="form-field">
+              <label for="nome">Seu nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Ex: Elon Musk" required>
+            </div>
+
+            <div class="form-field">
+              <label for="combo">Combo desejado</label>
+              <select id="combo" name="combo" required>
+                <option value="" disabled selected>Ex: Combo Lord</option>
+                <option value="Essencial Urbano">Essencial Urbano</option>
+                <option value="Combo Lord">Combo Lord</option>
+                <option value="Ritual Black">Ritual Black</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="horario">Horário</label>
+              <select id="horario" name="horario" required>
+                <option value="" disabled selected>Ex: Quinta feira às 19:00</option>
+                <option value="Segunda às 09:00">Segunda às 09:00</option>
+                <option value="Terça às 19:30">Terça às 19:30</option>
+                <option value="Quarta às 18:30">Quarta às 18:30</option>
+                <option value="Quinta às 19:00">Quinta às 19:00</option>
+                <option value="Sexta às 17:30">Sexta às 17:30</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="barbeiro">Seu barbeiro</label>
+              <select id="barbeiro" name="barbeiro" required>
+                <option value="" disabled selected>Ex: James Calloway</option>
+                <option value="James Calloway">James Calloway</option>
+                <option value="Diego Salinas">Diego Salinas</option>
+                <option value="Baptiste Moreau">Baptiste Moreau</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn--secondary btn--block" id="submitBtn">Agende seu horário</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <h3>Sobre Nós</h3>
+        <p>Centenas de clientes já passaram por nossas cadeiras e saíram com a autoestima renovada.</p>
+      </div>
+      <div class="footer__col">
+        <h3>Contato</h3>
+        <p>Localização: Rua Dom Walfrido Nogueira</p>
+        <p>Telefone: +57 (91) 99923-0815</p>
+        <p>Email: EmailBemMassa@gmail.com</p>
+      </div>
+      <div class="footer__col">
+        <h3>Links</h3>
+        <nav aria-label="Links do rodapé">
+          <ul>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#time">Time</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
